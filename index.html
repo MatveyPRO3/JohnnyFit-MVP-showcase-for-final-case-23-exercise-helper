@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Camera Stream with Pose Estimation</title>
+    <style>
+        .input_video {
+            width: 100%;
+            height: auto;
+        }
+        .output_canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <video class="input_video" autoplay></video>
+    <canvas class="output_canvas"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
