@@ -9,11 +9,11 @@
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.1/camera_utils.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.1/control_utils.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.1/drawing_utils.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_detection@0.0/face_detection.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh@0.1/face_mesh.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  
+
   <!-- BULMA NAVBAR -->
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
@@ -41,11 +41,11 @@
         <a class="navbar-item" href="hands.html">
           Hands
         </a>
-
+        
         <a class="navbar-item" href="pose.html">
           Pose
         </a>
-        
+
         <a class="navbar-item" href="holistic.html">
           Holistic
         </a>
@@ -67,7 +67,7 @@
             Webcam Input
           </p>
           <div class="panel-block">
-            <video class="input_video1"></video>
+            <video class="input_video2"></video>
           </div>
         </article>
       </div>
@@ -76,10 +76,10 @@
       <div class="column">
         <article class="panel is-info">
           <p class="panel-heading">
-            Mediapipe Face Detection
+            Mediapipe Face Mesh
           </p>
           <div class="panel-block">
-            <canvas class="output1" width="480px" height="480px"></canvas>
+            <canvas class="output2" width="480px" height="480px"></canvas>
           </div>
         </article>
       </div>
@@ -88,11 +88,9 @@
     <div class="loading">
       <div class="spinner"></div>
     </div>
+  <div style="visibility: hidden;" class="control2">
   </div>
 
-  <div style="visibility: hidden;" class="control1">
-  </div>
-
-  <script type="text/javascript" src="./js/face.js"></script>
+  <script type="text/javascript" src="./js/faceMesh.js"></script>
 </body>
 </html>
