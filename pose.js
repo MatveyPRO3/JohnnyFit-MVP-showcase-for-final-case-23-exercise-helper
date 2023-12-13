@@ -61,8 +61,8 @@ const camera = new Camera(video, {
     onFrame: async () => {
         await pose.send({ image: video });
     },
-    width: 1080,
-    height: 1920,
+    width: 960,
+    height: 540,
     facingMode: 'environment'
 });
 
